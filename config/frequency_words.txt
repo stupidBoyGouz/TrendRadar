@@ -28,9 +28,8 @@
 #   /赌博|博彩/       用 /.../ 包裹可以匹配多个词（用 | 分隔）
 
 [GLOBAL_FILTER]
-# 过滤标题党
 震惊
-
+/招聘|校招|实习|明星|娱乐圈|影视|综艺|体育赛事|彩票|博彩|游戏攻略/
 
 
 # ───────────────────────────────────────────────────────────────
@@ -150,109 +149,183 @@
 [WORD_GROUPS]
 
 # ═══════════════════════════════════════════════════════════════
-#                         企业与品牌
+# AI销售 / 营销 / 客户运营
 # ═══════════════════════════════════════════════════════════════
 
-/胖东来|于东来/ => 胖东来
+[AI销售]
+/AI销售|销售AI|销售智能体|销售Agent|销售助手|销售Copilot|智能销售|AI SDR|Sales Agent|Sales Copilot/i
+@10
 
-/深度求索|幻方量化|梁文锋|\bDeepSeek\b/ => DeepSeek
+[客户洞察]
+/客户洞察|客户画像|客户分析|客户研究|Account Research|Customer Intelligence|Buyer Intent/i
+@10
 
-/华为|任正非|余承东|鸿蒙|海思|昇腾|鲲鹏|\bHUAWEI\b|\bHarmonyOS\b|\bHiSilicon\b/ => 华为
+[销售线索]
+/销售线索|线索挖掘|线索评分|线索识别|潜客|获客|拓客|Lead Generation|Lead Scoring|Prospecting/i
+@10
 
-/比亚迪|王传福|方程豹|腾势|仰望|弗迪|刀片电池|云辇|\bBYD\b|\bDenza\b|\bYangwang\b/ => 比亚迪
+[商机与跟进]
+/商机分析|商机管理|赢单|客户跟进|自动跟进|销售推进|下一步行动|Next Best Action/i
+@10
 
-/大疆|汪滔|灵眸|如影|\bDJI\b|\bRoboMaster\b|\bMavic\b|\bZenmuse\b/ => 大疆
+[智能外呼]
+/智能外呼|AI外呼|电话机器人|语音智能体|Voice Agent|AI Calling|AI Phone/i
+@10
 
-/宇树|王兴兴|\bUnitree\b/ => 宇树机器人
+[销售质检与陪练]
+/销售质检|销售陪练|话术分析|会话分析|Conversation Intelligence|Sales Coaching/i
+@10
 
-/智元|灵犀|稚晖君|彭志辉|AgiBot/ => 智元机器人
-/众擎|EngineAI|赵同阳/ => 众擎机器人
+[CRM]
+/AI CRM|智能CRM|CRM智能体|CRM Agent|销售易|纷享销客|探迹|Salesforce|HubSpot/i
+@10
 
-/黑神话|冯骥/ => 黑神话悟空
-
-/影之刃零|梁其伟/ => 影之刃零
-
-/三体|流浪地球|刘慈欣|郭帆/ => 三体/流浪地球
-
-申奥
-
-/京东|刘强东|\bJD\b|\bJingdong\b/ => 京东
-
-/字节|张一鸣|梁汝波|抖音|\bByteDance\b|\bTikTok\b|\bDouyin\b|\bLark\b|\bCapCut\b/ => 字节跳动
-
-/腾讯|鹅厂|马化腾|微信|QQ|天美|阅文集团|微众银行|\bTencent\b|\bPony Ma\b|\bWeChat\b|\bLightSpeed\b|\bWeBank\b/ => 腾讯
-
-/qwen|minimax|glm/ => 国产开源模型
-
-/特斯拉|马斯克|\bTesla\b|\bElon Musk\b|\bCybertruck\b|\bModel 3\b|\bModel Y\b|\bModel S\b|\bModel X\b|\bFSD\b/ => 特斯拉
-
-/英伟达|黄仁勋|\bNVIDIA\b|\bGeForce\b|\bRTX\b|\bCUDA\b|\bJensen Huang\b/ => 英伟达
-/苏姿丰|锐龙|霄龙|\bAMD\b|\bRyzen\b|\bEPYC\b|\bRadeon\b|\bLisa Su\b/ => AMD
-
-/微软|\bMicrosoft\b|\bWindows\b|\bAzure\b|\bSatya Nadella\b|\bCopilot\b/ => 微软
-/谷歌|皮查伊|安卓|油管|\bGoogle\b|\bAlphabet\b|\bAndroid\b|\bChrome\b|\bYouTube\b|\bGemini\b|\bDeepMind\b|\bWaymo\b/ => 谷歌
-/库克|\biPhone\b|\biPad\b|\bMacBook\b|\biOS\b|\bVision Pro\b|\bAirPods\b|\bApple\b|\bTim Cook\b/ => 苹果
-
-/\bOpenAI\b|\bChatGPT\b|\bSora\b|\bDALL-E\b|\bSam Altman\b|\bGreg Brockman\b/ => OpenAI
-/\bAnthropic\b|\bClaude\b|\bDario Amodei\b/ => Claude
+[企微与私域]
+/企业微信|企微|私域|私域运营|客户运营|SCRM|微信营销|AI私域/i
+@10
 
 
 # ═══════════════════════════════════════════════════════════════
-#                         国家与地区
+# AI Agent / 自动化 / 企业应用
 # ═══════════════════════════════════════════════════════════════
 
-[中国]
-国产
-中国
+[AI Agent]
+/AI Agent|Agentic AI|智能体|AI智能体|Agent平台|Agent框架|Multi-Agent|多智能体/i
+@15
 
-[东亚]
-日本
-朝鲜
-韩国
+[工作流自动化]
+/AI工作流|工作流自动化|Workflow Automation|自动化平台|RPA|流程自动化/i
+@10
 
-[北美]
-美国
-加拿大
+[MCP]
+/\bMCP\b|Model Context Protocol|模型上下文协议/i
+@10
 
-[西欧]
-法国
-英国
+[Browser Agent]
+/Browser Agent|浏览器智能体|Computer Use|电脑操作智能体|GUI Agent/i
+@10
 
-/俄罗斯|俄国/ => 俄罗斯
+[知识库与RAG]
+/知识库|企业知识库|RAG|知识问答|知识助手|Knowledge Base/i
+@10
 
-印度
+[企业AI]
+/企业AI|AI落地|企业智能体|AI赋能|企业级AI|AI SaaS|企业AI应用/i
+@15
 
 
 # ═══════════════════════════════════════════════════════════════
-#                         科技领域
+# 国内AI平台 / 工具生态
 # ═══════════════════════════════════════════════════════════════
 
-[AI 相关]
-/(?<![a-zA-Z])ai(?![a-zA-Z])/
-人工智能
+[扣子Coze]
+/扣子|Coze/i
+@10
 
-[芯片]
-芯片
-光刻机
-半导体
+[阿里AI]
+/通义|千问|Qwen|百炼|ModelScope|魔搭|阿里云AI/i
+@10
 
-/水电|雅鲁藏布江/ => 水电
-/光伏|太阳能/ => 光伏
-核能
-能源
+[字节AI]
+/豆包|火山引擎|方舟|扣子|ByteDance AI/i
+@10
 
-/自动驾驶|无人驾驶|智驾/ => 自动驾驶
+[腾讯AI]
+/腾讯混元|混元大模型|腾讯AI|腾讯云AI|元宝/i
+@10
 
-机器人
-/机械狗|四足/ => 机器狗
-具身智能
+[百度AI]
+/文心|ERNIE|千帆|百度智能云|百度AI/i
+@10
 
-/月球|登月|火星|宇宙|飞船|航天|空间站|卫星/ => 航天
+[智谱]
+/智谱|GLM|AutoGLM|ChatGLM/i
+@10
 
-# 前沿科技
-量子
-脑机
-基因
+[Kimi]
+/Kimi|Moonshot|月之暗面/i
+@10
 
-# 产业政策
-生产力
+[DeepSeek]
+/DeepSeek|深度求索/i
+@10
+
+[MiniMax]
+/MiniMax|海螺AI/i
+@10
+
+
+# ═══════════════════════════════════════════════════════════════
+# 新AI工具 / 产品
+# ═══════════════════════════════════════════════════════════════
+
+[新AI工具]
+/AI工具|AI产品|AI平台|AI应用|AI软件|AI助手|AI神器/i
+@20
+
+[AI产品发布]
+/上线|发布|推出|正式开放|内测|公测|新版|升级|新增功能|新功能/
++AI
+@15
+
+[AI办公]
+/AI办公|办公智能体|AI助手|AI会议|会议纪要|AI文档|AI表格|AI PPT/i
+@10
+
+[AI客服]
+/AI客服|客服智能体|客服Agent|智能客服|Customer Service AI/i
+@10
+
+[AI营销]
+/AI营销|营销智能体|营销自动化|Marketing AI|Marketing Agent|内容营销AI/i
+@10
+
+
+# ═══════════════════════════════════════════════════════════════
+# 海外头部AI能力
+# ═══════════════════════════════════════════════════════════════
+
+[OpenAI]
+/OpenAI|ChatGPT|GPT-|Codex|Sora/i
+@10
+
+[Claude]
+/Anthropic|Claude/i
+@10
+
+[Google AI]
+/Gemini|Google AI|DeepMind/i
+@10
+
+[微软AI]
+/Microsoft Copilot|Copilot Studio|Azure AI|Microsoft AI/i
+@10
+
+
+# ═══════════════════════════════════════════════════════════════
+# 重点业务动作
+# ═══════════════════════════════════════════════════════════════
+
+[AI获客]
+/AI获客|智能获客|自动获客|精准获客|客户开发|潜客开发/i
+@10
+
+[个性化营销]
+/个性化营销|千人千面|个性化推荐|个性化文案|Personalization/i
+@10
+
+[意向识别]
+/意向识别|客户意向|购买意向|高意向客户|Intent Detection|Intent Data/i
+@10
+
+[销售知识助手]
+/销售知识库|销售知识助手|销售问答|产品知识库|销售助手/i
+@10
+
+[AI会议]
+/AI会议|会议助手|会议纪要|会议总结|行动项|Meeting Copilot|Meeting Intelligence/i
+@10
+
+[销售自动化]
+/销售自动化|Sales Automation|自动跟进|自动触达|自动邀约|自动外呼/i
+@10
