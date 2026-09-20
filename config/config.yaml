@@ -127,70 +127,327 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-    - id: "hacker-news"
-      name: "Hacker News"
-      url: "https://hnrss.org/frontpage"
+
+    # ============================================================
+    # 一、创业 / 新产品 / 新公司发现
+    # 最容易发现 FindAI 这类新项目
+    # ============================================================
   
-    - id: "ruanyifeng"
-      name: "阮一峰的网络日志"
-      url: "http://www.ruanyifeng.com/blog/atom.xml"
-      enabled: false
-      # max_age_days: 3
+    - id: "36kr"
+      name: "36氪"
+      url: "https://wechat2rss.bestblogs.dev/feed/c68b58fb17ac7ae4b23c2af276cdd61c9eca1a48.xml"
   
-    - id: "qbitai"
-      name: "量子位"
-      url: "https://www.qbitai.com/feed"
+    - id: "founder-park"
+      name: "Founder Park"
+      url: "https://wechat2rss.bestblogs.dev/feed/f940695505f2be1399d23cc98182297cadf6f90d.xml"
   
-    - id: "machine-heart"
-      name: "机器之心"
-      url: "https://wechat2rss.bestblogs.dev/feed/8d97af31b0de9e48da74558af128a4673d78c9a3.xml"
-  
-    - id: "new-ai-era"
-      name: "新智元"
-      url: "https://wechat2rss.bestblogs.dev/feed/e531a18b21c34cf787b83ab444eef659d7a980de.xml"
-  
-    - id: "guizang-ai"
-      name: "歸藏的AI工具箱"
-      url: "https://wechat2rss.bestblogs.dev/feed/1c3e3571b1627d23ee9c64521a0b0a41d3fe2987.xml"
-  
-    - id: "shanxing-ai"
-      name: "山行AI"
-      url: "https://wechat2rss.bestblogs.dev/feed/98bc16b6f53902a2ab511b4faa3499e0a1c78eb1.xml"
+    - id: "geekpark"
+      name: "极客公园"
+      url: "https://wechat2rss.bestblogs.dev/feed/11ea7163fbea99e2ab9fa2812ac3d179574886cc.xml"
   
     - id: "jazzyear"
       name: "甲子光年"
       url: "https://wechat2rss.bestblogs.dev/feed/1c4008936645d5c17239d99bba91522cf2bdfa26.xml"
   
+    - id: "cyzone"
+      name: "创业邦"
+      url: "https://wechat2rss.bestblogs.dev/feed/f5e0d8e342d9e2ec5b2942f08522cfaec17acc8d.xml"
+  
+    - id: "latepost"
+      name: "晚点LatePost"
+      url: "https://wechat2rss.bestblogs.dev/feed/c442206ec9957f3c52f2f40300ca532079538b31.xml"
+  
+    - id: "42zhangjing"
+      name: "42章经"
+      url: "https://wechat2rss.bestblogs.dev/feed/f6694726ced4ba3d7c7cd65c6edf2160c5978387.xml"
+  
+    - id: "overseas-unicorn"
+      name: "海外独角兽"
+      url: "https://wechat2rss.bestblogs.dev/feed/7200d3a5e976d231deb1e40ad33745c0e649b029.xml"
+  
+    - id: "newin"
+      name: "有新Newin"
+      url: "https://wechat2rss.bestblogs.dev/feed/74554dcb3da8982083426b871bc8c314a9de9729.xml"
+  
+    - id: "zhaibo"
+      name: "窄播"
+      url: "https://wechat2rss.bestblogs.dev/feed/61bdf2799e5208df45c8bbbd96ba81dd088d2483.xml"
+  
+    - id: "hongshanhui"
+      name: "红杉汇"
+      url: "https://wechat2rss.bestblogs.dev/feed/fb9c7a3ba3666dc1b0956b0dac916cd5c56ecf9f.xml"
+  
+    - id: "waves"
+      name: "暗涌Waves"
+      url: "https://wechat2rss.bestblogs.dev/feed/bd586c1499b56aaec02dfefa87126232d234b010.xml"
+  
+    - id: "guixingren"
+      name: "硅星人Pro"
+      url: "https://wechat2rss.bestblogs.dev/feed/c62ceda9eed269d851802bdbc5f33c4fabbf7462.xml"
+  
+  
+    # ============================================================
+    # 二、销售 / SaaS / 私域 / 营销 / 产品
+    # 这部分和你的业务最相关
+    # ============================================================
+  
     - id: "woshipm"
       name: "人人都是产品经理"
       url: "https://wechat2rss.bestblogs.dev/feed/2d790e38f8af54c5af77fa5fed687a7c66d34c22.xml"
-  
-    - id: "jianshi"
-      name: "见实"
-      url: "https://wechat2rss.bestblogs.dev/feed/194b072227430108e54f40a67c9a514aff599a2f.xml"
   
     - id: "saas-baiyexing"
       name: "SaaS白夜行"
       url: "https://wechat2rss.bestblogs.dev/feed/a0f20f6277c356668a2567632a67e15b0413f395.xml"
   
+    - id: "jianshi"
+      name: "见实"
+      url: "https://wechat2rss.bestblogs.dev/feed/194b072227430108e54f40a67c9a514aff599a2f.xml"
+  
+    - id: "yunyingyanjiushe"
+      name: "运营研究社"
+      url: "https://wechat2rss.bestblogs.dev/feed/bc7bf2a738eebe7ef9728f407721300ac884ad74.xml"
+  
+    - id: "newrank"
+      name: "新榜"
+      url: "https://wechat2rss.bestblogs.dev/feed/16647c855b3c08c6406fb029f3cd9bb826e70d0c.xml"
+  
+    - id: "daofa"
+      name: "刀法研究所"
+      url: "https://wechat2rss.bestblogs.dev/feed/9a650290a6093330e410549cea75251cb5a3249c.xml"
+  
+    - id: "pricetag"
+      name: "PriceTag发现好应用"
+      url: "https://wechat2rss.bestblogs.dev/feed/06ce06c7735de89c7c29df15c64328a034f7c25b.xml"
+  
+    - id: "chanpin-erjie"
+      name: "产品二姐"
+      url: "https://wechat2rss.bestblogs.dev/feed/55de4108d258a231633eafd1810377e2bd674c8c.xml"
+  
+    - id: "liuyanfeiyu"
+      name: "刘言飞语"
+      url: "https://wechat2rss.bestblogs.dev/feed/0bbf4e1271c70b60721eb2ce4126f11943d14558.xml"
+  
+    - id: "chanpin-quanshe"
+      name: "产品犬舍"
+      url: "https://wechat2rss.bestblogs.dev/feed/39221421bad19cf3c0041ba27b11618dc1123e75.xml"
+  
+  
+    # ============================================================
+    # 三、AI工具 / Agent / 实际应用
+    # 少看模型参数，多看“能拿来干什么”
+    # ============================================================
+  
+    - id: "guizang-ai"
+      name: "歸藏的AI工具箱"
+      url: "https://wechat2rss.bestblogs.dev/feed/1c3e3571b1627d23ee9c64521a0b0a41d3fe2987.xml"
+  
+    - id: "ai-application"
+      name: "AI大模型应用实践"
+      url: "https://wechat2rss.bestblogs.dev/feed/ab58feca07412e57049e5d8561439c3fb35783c2.xml"
+  
+    - id: "xiaohu-ai"
+      name: "小互AI"
+      url: "https://wechat2rss.bestblogs.dev/feed/d87570ae13ab1ce240cd538181c131a8baebce4b.xml"
+  
+    - id: "agent-ju"
+      name: "AGENT橘"
+      url: "https://wechat2rss.bestblogs.dev/feed/6cef434b771dd75a91864b2e699a622cb4e3eb33.xml"
+  
+    - id: "shanxing-ai"
+      name: "山行AI"
+      url: "https://wechat2rss.bestblogs.dev/feed/98bc16b6f53902a2ab511b4faa3499e0a1c78eb1.xml"
+  
+    - id: "ai-frontline"
+      name: "AI前线"
+      url: "https://wechat2rss.bestblogs.dev/feed/25185b01482da0f485418ecb92e208b4416712fb.xml"
+  
+    - id: "zhidx"
+      name: "智东西"
+      url: "https://wechat2rss.bestblogs.dev/feed/cfd52b4245ca6119b2fda4ef934832c689028927.xml"
+  
+    - id: "naojiti"
+      name: "脑极体"
+      url: "https://wechat2rss.bestblogs.dev/feed/5044161439fe8773e9d906a04d6df8f711e770ea.xml"
+  
+    - id: "wangjiwei"
+      name: "王吉伟"
+      url: "https://wechat2rss.bestblogs.dev/feed/9ebca45070e74a337b19ca8ff87490194a2b4060.xml"
+  
+    - id: "intelligence-emergence"
+      name: "智能涌现"
+      url: "https://wechat2rss.bestblogs.dev/feed/049f4d78f94b31ab6afda95b1a65f0e562c8d5c2.xml"
+  
+    - id: "infoq"
+      name: "InfoQ"
+      url: "https://wechat2rss.bestblogs.dev/feed/13da94d7eb314b49fa251cb7e8399cae29d772db.xml"
+  
+    - id: "leiphone"
+      name: "雷峰网"
+      url: "https://wechat2rss.bestblogs.dev/feed/5e4d00adff41e5f5b2bd823215c9949e7e678bd5.xml"
+  
+    - id: "tmtpost"
+      name: "钛媒体"
+      url: "https://wechat2rss.bestblogs.dev/feed/3d5672d87be7aba570671c8cb2fdbda36a5dfd9e.xml"
+  
+  
+    # ============================================================
+    # 四、国内办公 / 企业工具生态
+    # 经常会冒出可以直接接企业流程的新能力
+    # ============================================================
+  
+    - id: "feishu"
+      name: "飞书"
+      url: "https://wechat2rss.bestblogs.dev/feed/acae39126a4fe47d9c99714708d606f5c3ab0169.xml"
+  
+    - id: "dingtalk"
+      name: "钉钉"
+      url: "https://wechat2rss.bestblogs.dev/feed/3291b88d0dc81c3c094752f756256c715d038a7b.xml"
+  
+    - id: "dify"
+      name: "Dify"
+      url: "https://wechat2rss.bestblogs.dev/feed/e46c03a4cb65509e22ab9a8507888a2096319d65.xml"
+  
+    - id: "aliyun-developer"
+      name: "阿里云开发者"
+      url: "https://wechat2rss.bestblogs.dev/feed/39fc51b0b1316137e608c45da5dbbca4f9eb9538.xml"
+  
+    - id: "tencent-cloud-developer"
+      name: "腾讯云开发者"
+      url: "https://wechat2rss.bestblogs.dev/feed/6cec2c211479a5502896375860009782cf10c2ba.xml"
+  
+    - id: "tencent-research"
+      name: "腾讯研究院"
+      url: "https://wechat2rss.bestblogs.dev/feed/6152301e0978bffb0a8284cab339262b9764dcfb.xml"
+  
+    - id: "thoughtworks"
+      name: "思特沃克洞见"
+      url: "https://wechat2rss.bestblogs.dev/feed/6c6865b59e528f6f86d80b9a2071052416ef561f.xml"
+  
+    - id: "modelscope"
+      name: "魔搭ModelScope社区"
+      url: "https://wechat2rss.bestblogs.dev/feed/d993a885260f96057b9a4c96212cb2c95bb5054b.xml"
+  
+  
+    # ============================================================
+    # 五、开源工具发现
+    # 有时候会发现能快速做内部PoC的项目
+    # ============================================================
+  
+    - id: "github-daily"
+      name: "GitHubDaily"
+      url: "https://wechat2rss.bestblogs.dev/feed/5b195b2d021f8151ac4f81ceae54cd48f08b0632.xml"
+  
+    - id: "hello-github"
+      name: "HelloGitHub"
+      url: "https://wechat2rss.bestblogs.dev/feed/e6cc80b97bf64eeef61cc5927c78ba6ce3356422.xml"
+  
+    - id: "guangguang-github"
+      name: "逛逛GitHub"
+      url: "https://wechat2rss.bestblogs.dev/feed/38be32e5376d852c13d3383e4d7a757fd9a55ff6.xml"
+  
+  
+    # ============================================================
+    # 六、BestBlogs关键词雷达
+    # 不是关注某家媒体，而是跨来源找特定业务关键词
+    # 这一组对发现 FindAI 类产品非常重要
+    # ============================================================
+  
+    - id: "search-sales-agent"
+      name: "关键词-销售智能体"
+      url: "https://www.bestblogs.dev/zh/feeds/rss?keyword=%E9%94%80%E5%94%AE%E6%99%BA%E8%83%BD%E4%BD%93&timeFilter=1w&type=article"
+  
+    - id: "search-ai-sales"
+      name: "关键词-AI销售"
+      url: "https://www.bestblogs.dev/zh/feeds/rss?keyword=AI%E9%94%80%E5%94%AE&timeFilter=1w&type=article"
+  
+    - id: "search-sales-assistant"
+      name: "关键词-销售助手"
+      url: "https://www.bestblogs.dev/zh/feeds/rss?keyword=%E9%94%80%E5%94%AE%E5%8A%A9%E6%89%8B&timeFilter=1w&type=article"
+  
+    - id: "search-ai-headset"
+      name: "关键词-AI耳机"
+      url: "https://www.bestblogs.dev/zh/feeds/rss?keyword=AI%E8%80%B3%E6%9C%BA&timeFilter=1w&type=article"
+  
+    - id: "search-smart-hardware"
+      name: "关键词-智能硬件"
+      url: "https://www.bestblogs.dev/zh/feeds/rss?keyword=%E6%99%BA%E8%83%BD%E7%A1%AC%E4%BB%B6&timeFilter=1w&type=article"
+  
+    - id: "search-ai-leads"
+      name: "关键词-AI获客"
+      url: "https://www.bestblogs.dev/zh/feeds/rss?keyword=AI%E8%8E%B7%E5%AE%A2&timeFilter=1w&type=article"
+  
+    - id: "search-ai-call"
+      name: "关键词-智能外呼"
+      url: "https://www.bestblogs.dev/zh/feeds/rss?keyword=%E6%99%BA%E8%83%BD%E5%A4%96%E5%91%BC&timeFilter=1w&type=article"
+  
+    - id: "search-customer-insight"
+      name: "关键词-客户洞察"
+      url: "https://www.bestblogs.dev/zh/feeds/rss?keyword=%E5%AE%A2%E6%88%B7%E6%B4%9E%E5%AF%9F&timeFilter=1w&type=article"
+  
+    - id: "search-sales-automation"
+      name: "关键词-销售自动化"
+      url: "https://www.bestblogs.dev/zh/feeds/rss?keyword=%E9%94%80%E5%94%AE%E8%87%AA%E5%8A%A8%E5%8C%96&timeFilter=1w&type=article"
+  
+    - id: "search-crm-agent"
+      name: "关键词-CRM Agent"
+      url: "https://www.bestblogs.dev/zh/feeds/rss?keyword=CRM%20Agent&timeFilter=1w&type=article"
+  
+    - id: "search-wecom"
+      name: "关键词-企微"
+      url: "https://www.bestblogs.dev/zh/feeds/rss?keyword=%E4%BC%81%E5%BE%AE&timeFilter=1w&type=article"
+  
+    - id: "search-private-domain"
+      name: "关键词-私域"
+      url: "https://www.bestblogs.dev/zh/feeds/rss?keyword=%E7%A7%81%E5%9F%9F&timeFilter=1w&type=article"
+  
+    - id: "search-sales-quality"
+      name: "关键词-销售质检"
+      url: "https://www.bestblogs.dev/zh/feeds/rss?keyword=%E9%94%80%E5%94%AE%E8%B4%A8%E6%A3%80&timeFilter=1w&type=article"
+  
+    - id: "search-sales-coach"
+      name: "关键词-销售陪练"
+      url: "https://www.bestblogs.dev/zh/feeds/rss?keyword=%E9%94%80%E5%94%AE%E9%99%AA%E7%BB%83&timeFilter=1w&type=article"
+  
+    - id: "search-opportunity"
+      name: "关键词-商机"
+      url: "https://www.bestblogs.dev/zh/feeds/rss?keyword=%E5%95%86%E6%9C%BA&timeFilter=1w&type=article"
+  
+  
+    # ============================================================
+    # 七、模型厂商官方源
+    # 暂时关闭，避免重新被模型新闻淹没
+    # 想看平台新能力时再打开
+    # ============================================================
+  
     - id: "zhipu"
       name: "智谱"
       url: "https://wechat2rss.bestblogs.dev/feed/433d2134dca54d80804daf32e8be546155be3300.xml"
+      enabled: false
+  
+    - id: "qwen"
+      name: "通义实验室"
+      url: "https://wechat2rss.bestblogs.dev/feed/4ebee6222ae08705b8aabc9116f0defbcb6b17c6.xml"
+      enabled: false
+  
+    - id: "baidu-ernie"
+      name: "百度文心"
+      url: "https://wechat2rss.bestblogs.dev/feed/d0767d885e6ba213344fb0c0408c51331e23a994.xml"
+      enabled: false
   
     - id: "hunyuan"
       name: "腾讯混元"
       url: "https://wechat2rss.bestblogs.dev/feed/306ce19a1ca590c9c2df781789e828d1acfa1356.xml"
+      enabled: false
   
-    - id: "qwen"
-      name: "通义大模型"
-      url: "https://wechat2rss.bestblogs.dev/feed/4ebee6222ae08705b8aabc9116f0defbcb6b17c6.xml"
-      # 自定义源示例
-      # - id: "custom-feed"
-      #   name: "自定义源"
-      #   url: "https://example.com/feed.xml"
-      #   enabled: false
-      #   max_age_days: 0               # 示例：禁用过滤，推送所有文章
-
+    - id: "deepseek"
+      name: "DeepSeek"
+      url: "https://wechat2rss.bestblogs.dev/feed/1709da4f538d4ce4fb6d7a8ba1a5a1c297919601.xml"
+      enabled: false
+  
+    - id: "kimi"
+      name: "月之暗面 Kimi"
+      url: "https://wechat2rss.bestblogs.dev/feed/c5c43d4bc17bae656763859ed0903bb6314ec6fe.xml"
+      enabled: false
 
 # ===============================================================
 # 4. 报告模式
