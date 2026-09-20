@@ -137,9 +137,53 @@ rss:
       enabled: false                  # 禁用
       # max_age_days: 3               # 示例：推送 3 天内的文章（更新较慢的博客）
      
-    - id: "yahoo-finance"
-      name: "雅虎财经"
-      url: "https://finance.yahoo.com/news/rssindex"
+     - id: "qbitai"
+      name: "量子位"
+      url: "https://www.qbitai.com/feed"
+
+    - id: "machine-heart"
+      name: "机器之心"
+      url: "https://wechat2rss.bestblogs.dev/feed/8d97af31b0de9e48da74558af128a4673d78c9a3.xml"
+
+    - id: "new-ai-era"
+      name: "新智元"
+      url: "https://wechat2rss.bestblogs.dev/feed/e531a18b21c34cf787b83ab444eef659d7a980de.xml"
+
+    - id: "guizang-ai"
+      name: "歸藏的AI工具箱"
+      url: "https://wechat2rss.bestblogs.dev/feed/1c3e3571b1627d23ee9c64521a0b0a41d3fe2987.xml"
+
+    - id: "shanxing-ai"
+      name: "山行AI"
+      url: "https://wechat2rss.bestblogs.dev/feed/98bc16b6f53902a2ab511b4faa3499e0a1c78eb1.xml"
+
+    - id: "jazzyear"
+      name: "甲子光年"
+      url: "https://wechat2rss.bestblogs.dev/feed/1c4008936645d5c17239d99bba91522cf2bdfa26.xml"
+
+    - id: "woshipm"
+      name: "人人都是产品经理"
+      url: "https://wechat2rss.bestblogs.dev/feed/2d790e38f8af54c5af77fa5fed687a7c66d34c22.xml"
+
+    - id: "jianshi"
+      name: "见实"
+      url: "https://wechat2rss.bestblogs.dev/feed/194b072227430108e54f40a67c9a514aff599a2f.xml"
+
+    - id: "saas-baiyexing"
+      name: "SaaS白夜行"
+      url: "https://wechat2rss.bestblogs.dev/feed/a0f20f6277c356668a2567632a67e15b0413f395.xml"
+
+    - id: "zhipu"
+      name: "智谱"
+      url: "https://wechat2rss.bestblogs.dev/feed/433d2134dca54d80804daf32e8be546155be3300.xml"
+
+    - id: "hunyuan"
+      name: "腾讯混元"
+      url: "https://wechat2rss.bestblogs.dev/feed/306ce19a1ca590c9c2df781789e828d1acfa1356.xml"
+
+    - id: "qwen"
+      name: "通义大模型"
+      url: "https://wechat2rss.bestblogs.dev/feed/4ebee6222ae08705b8aabc9116f0defbcb6b17c6.xml"
 
     # 自定义源示例
     # - id: "custom-feed"
